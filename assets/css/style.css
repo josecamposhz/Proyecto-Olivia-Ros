@@ -1,5 +1,10 @@
 body {
 	font-family: 'Raleway', sans-serif;
+	padding-top: 56px;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 header {
@@ -18,4 +23,25 @@ header {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
+}
+
+/* Puntos en el carousel */
+ul.carousel-indicators [data-bs-target] li {
+  width: 3px;
+}
+
+/* Mismo tamaño para cada tarjeta */
+.card {
+	min-height: 100%;
+}
+
+.card .card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.card .card-body .card-text {
+	flex-grow: 1;
 }
