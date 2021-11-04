@@ -1,10 +1,10 @@
+:root {
+	scroll-behavior: auto;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	padding-top: 56px;
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
 
 /* Puntos en el carousel */
 ul.carousel-indicators [data-bs-target] li {
-  width: 3px;
+	width: 3px;
 }
 
 /* Mismo tamaño para cada tarjeta */

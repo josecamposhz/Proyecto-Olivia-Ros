@@ -24,3 +24,20 @@ var popoverTriggerList = [].slice.call(
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 	return new bootstrap.Popover(popoverTriggerEl);
 });
+
+var anclas = document.querySelectorAll('a');
+
+anclas.forEach((a) => {
+	if (a.hash !== '') {
+		a.addEventListener('click', function (event) {
+			event.preventDefault();
+
+			var hash = document.querySelector(a.hash);
+
+			window.scroll({
+				top: hash.offsetTop,
+				behavior: 'smooth',
+			});
+		});
+	}
+});
